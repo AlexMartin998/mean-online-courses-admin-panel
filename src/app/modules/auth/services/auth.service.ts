@@ -23,6 +23,13 @@ export class AuthService implements OnDestroy {
   private _token: string;
   private _currentUser?: User;
 
+  get token() {
+    return this._token;
+  }
+  get currentUser() {
+    return this._currentUser;
+  }
+
   // private fields
   private unsubscribe: Subscription[] = []; // Read more: => https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
   private authLocalStorageToken = `${environment.appVersion}-${environment.USERDATA_KEY}`;
