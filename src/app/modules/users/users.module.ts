@@ -7,9 +7,10 @@ import { InlineSVGModule } from 'ng-inline-svg-2';
 
 import { UserListPageComponent } from './pages/user-list-page/user-list-page.component';
 import { UsersRoutingModule } from './users-routing.module';
+import { UserAddModalComponent } from './components/user-add-modal/user-add-modal.component';
 
 @NgModule({
-  declarations: [UserListPageComponent],
+  declarations: [UserListPageComponent, UserAddModalComponent],
   imports: [
     CommonModule,
     UsersRoutingModule,
