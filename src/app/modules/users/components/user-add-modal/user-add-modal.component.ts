@@ -3,14 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-user-add-modal',
   templateUrl: './user-add-modal.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class UserAddModalComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
