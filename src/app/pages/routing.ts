@@ -43,6 +43,14 @@ const Routing: Routes = [
     redirectTo: '/dashboard',
     pathMatch: 'full',
   },
+
+  // // // My modules
+  {
+    path: 'users',
+    loadChildren: () =>
+      import('./../modules/users/users.module').then((m) => m.UsersModule),
+  },
+
   {
     path: '**',
     redirectTo: 'error/404',
